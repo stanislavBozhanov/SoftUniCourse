@@ -6,7 +6,6 @@ public class LargestThreeRectangles {
         String line = input.nextLine();
         String lineOnlyNumbers = line.replaceAll("[^\\d]+", " ");
         String[] arrayOfSides = lineOnlyNumbers.split(" ");
-        int recOne = 0, recTwo = 0, recThree = 0;
         Integer[] areas = new Integer[(arrayOfSides.length - 1) / 2];
         for (int i = 0; i <areas.length; i++) {
             areas[i] = Integer.parseInt(arrayOfSides[i * 2 + 1]) * Integer.parseInt(arrayOfSides[i * 2 + 2]);
